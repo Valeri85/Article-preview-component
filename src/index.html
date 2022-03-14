@@ -6,16 +6,16 @@
 		<!-- 2) Displays site properly based on user's device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- 3) Preload fonts -->
-		<link rel="preload" as="font" type="font/woff2" href="./public/assets/fonts/manrope-v11-latin-500.woff2" />
-		<link rel="preload" as="font" type="font/woff" href="./public/assets/fonts/manrope-v11-latin-500.woff" />
-		<link rel="preload" as="font" type="font/woff2" href="./public/assets/fonts/manrope-v11-latin-700.woff2" />
-		<link rel="preload" as="font" type="font/woff" href="./public/assets/fonts/manrope-v11-latin-700.woff" />
+		<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-v11-latin-500.woff2" />
+		<link rel="preload" as="font" type="font/woff" href="assets/fonts/manrope-v11-latin-500.woff" />
+		<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-v11-latin-700.woff2" />
+		<link rel="preload" as="font" type="font/woff" href="assets/fonts/manrope-v11-latin-700.woff" />
 		<!-- 4) Preload css -->
-		<link rel="preload" as="style" href="./public/css/style.min.css" />
+		<link rel="preload" as="style" href="css/style.min.css" />
 		<!-- 5) Title -->
 		<title>Frontend Mentor | Article preview component</title>
 		<!-- 6) Favicon -->
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png" />
 		<!-- 7) Author -->
 		<meta name="author" content="Valeri Makaridze" />
 		<!-- 8) Description -->
@@ -43,9 +43,9 @@
 		<meta property="twitter:image:alt" content="Article preview component" />
 		<meta name="twitter:creator" content="@Valeri79125128" />
 		<!-- 13) Css -->
-		<link rel="stylesheet" href="./css/style.min.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
 		<!-- 14) javascript -->
-		<script defer src="./js/script.min.js"></script>
+		<script defer src="js/script.min.js"></script>
 	</head>
 	<body>
 		<!-- Main -->
@@ -54,21 +54,13 @@
 			<section class="card" aria-labelledby="card__title">
 				<!-- Main image -->
 				<picture class="card__picture">
-					<source
-						srcset="./assets/images/drawers-mobile.webp"
-						media="(max-width: 1439px)"
-						type="image/webp"
-					/>
-					<source srcset="./assets/images/drawers-mobile.jpg" media="(max-width: 1439px)" />
-					<source
-						srcset="./assets/images/drawers-desktop.webp"
-						media="(min-width: 1440px)"
-						type="image/webp"
-					/>
-					<source srcset="./assets/images/drawers-desktop.jpg" media="(max-width: 1440px)" />
+					<source srcset="assets/images/drawers-mobile.webp" media="(max-width: 1439px)" type="image/webp" />
+					<source srcset="assets/images/drawers-mobile.jpg" media="(max-width: 1439px)" />
+					<source srcset="assets/images/drawers-desktop.webp" media="(min-width: 1440px)" type="image/webp" />
+					<source srcset="assets/images/drawers-desktop.jpg" media="(max-width: 1440px)" />
 					<img
 						class="card__image"
-						src="./assets/images/drawers-mobile.jpg"
+						src="assets/images/drawers-mobile.jpg"
 						width="375"
 						height="200"
 						alt="wonderful touches to furniture"
@@ -96,7 +88,7 @@
 						<!-- Avatar -->
 						<img
 							class="card__footer-avatar"
-							src="./assets/images/avatar-michelle.jpg"
+							src="assets/images/avatar-michelle.jpg"
 							width="40"
 							height="40"
 							alt="Michelle Appleton"
@@ -127,21 +119,21 @@
 							<a class="card__footer-overlay-link" href="#"
 								><img
 									class="card__footer-overlay-icon"
-									src="./assets/images/icons/icon-facebook.svg"
+									src="assets/images/icons/icon-facebook.svg"
 									alt=""
 									aria-hidden="true"
 							/></a>
 							<a class="card__footer-overlay-link" href="#"
 								><img
 									class="card__footer-overlay-icon"
-									src="./assets/images/icons/icon-twitter.svg"
+									src="assets/images/icons/icon-twitter.svg"
 									alt=""
 									aria-hidden="true"
 							/></a>
 							<a class="card__footer-overlay-link" href="#"
 								><img
 									class="card__footer-overlay-icon"
-									src="./assets/images/icons/icon-pinterest.svg"
+									src="assets/images/icons/icon-pinterest.svg"
 									alt=""
 									aria-hidden="true"
 							/></a>
