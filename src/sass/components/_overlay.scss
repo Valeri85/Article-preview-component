@@ -1,0 +1,35 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.card__footer {
+	position: relative;
+	&-overlay {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+		position: absolute;
+		inset: 0;
+		padding: 0 2.4em 0 2.5em;
+		background-color: var(--very-dark-grayish-blue);
+		border-bottom-left-radius: em(12.5);
+		border-bottom-right-radius: em(12.5);
+		transition: opacity var(--animation-time) ease-in-out, visibility var(--animation-time) ease-in-out;
+		@include desktop {
+			inset: -64% -17.5% 100% 60%;
+			border-radius: em(12.5);
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: em(-30);
+				left: 50%;
+				border: 1em solid transparent;
+				border-top-color: var(--very-dark-grayish-blue);
+				transform: translateX(-50%);
+			}
+		}
+		&-text {
+			color: var(--grayish-blue);
+			letter-spacing: em(5);
+		}
+	}
+}

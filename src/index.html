@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 1) Characters and simbols -->
+		<meta charset="UTF-8" />
+		<!-- 2) Displays site properly based on user's device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 3) Preload fonts -->
+		<link rel="preload" as="font" type="font/woff2" href="./public/assets/fonts/manrope-v11-latin-500.woff2" />
+		<link rel="preload" as="font" type="font/woff" href="./public/assets/fonts/manrope-v11-latin-500.woff" />
+		<link rel="preload" as="font" type="font/woff2" href="./public/assets/fonts/manrope-v11-latin-700.woff2" />
+		<link rel="preload" as="font" type="font/woff" href="./public/assets/fonts/manrope-v11-latin-700.woff" />
+		<!-- 4) Preload css -->
+		<link rel="preload" as="style" href="./public/css/style.min.css" />
+		<!-- 5) Title -->
+		<title>Frontend Mentor | Article preview component</title>
+		<!-- 6) Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icons/favicon-32x32.png" />
+		<!-- 7) Author -->
+		<meta name="author" content="Valeri Makaridze" />
+		<!-- 8) Description -->
+		<meta name="description" content="Article preview component challenge on Frontend Mentor" />
+		<!-- 9) Keywords -->
+		<meta
+			name="keywords"
+			content="front-end mentor, valeri makaridze, valeri, article preview component, challenge"
+		/>
+		<!-- 10) Theme color -->
+		<meta name="theme-color" content="hsl(217, 19%, 35%)" />
+		<!-- 11) Facebook open graph -->
+		<meta property="og:title" content="Article preview component" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Article preview component challenge on Frontend Mentor" />
+		<!-- <meta property="og:image" content="https://article-preview-component-front-end-mentor.netlify.app/screenshot-desktop.png" /> -->
+		<meta property="og:image:alt" content="Article preview component" />
+		<!-- <meta property="og:url" content="https://article-preview-component-front-end-mentor.netlify.app/" /> -->
+		<!-- 12) Twitter card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Article preview component" />
+		<meta name="twitter:description" content="Article preview component challenge on Frontend Mentor" />
+		<meta name="twitter:site" content="@Valeri79125128" />
+		<!-- <meta name="twitter:image" content="https://article-preview-component-front-end-mentor.netlify.app/screenshot-desktop.png" /> -->
+		<meta property="twitter:image:alt" content="Article preview component" />
+		<meta name="twitter:creator" content="@Valeri79125128" />
+		<!-- 13) Css -->
+		<link rel="stylesheet" href="./css/style.min.css" />
+		<!-- 14) javascript -->
+		<script defer src="./js/script.min.js"></script>
+	</head>
+	<body>
+		<!-- Main -->
+		<main>
+			<!-- Preview card -->
+			<section class="card" aria-labelledby="card__title">
+				<!-- Main image -->
+				<picture class="card__picture">
+					<source
+						srcset="./assets/images/drawers-mobile.webp"
+						media="(max-width: 1439px)"
+						type="image/webp"
+					/>
+					<source srcset="./assets/images/drawers-mobile.jpg" media="(max-width: 1439px)" />
+					<source
+						srcset="./assets/images/drawers-desktop.webp"
+						media="(min-width: 1440px)"
+						type="image/webp"
+					/>
+					<source srcset="./assets/images/drawers-desktop.jpg" media="(max-width: 1440px)" />
+					<img
+						class="card__image"
+						src="./assets/images/drawers-mobile.jpg"
+						width="375"
+						height="200"
+						alt="wonderful touches to furniture"
+					/>
+				</picture>
+
+				<figure class="card__figure">
+					<!-- Card body -->
+					<div class="card__body">
+						<!-- Title -->
+						<h1 class="card__title" id="card__title">
+							Shift the overall look and feel by adding these wonderful touches to furniture in your home
+						</h1>
+						<!-- Blockquote -->
+						<blockquote class="card__blockquote">
+							<p class="card__blockquote-text">
+								Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
+								and uninviting. I’ve got some simple tips to help you make any room feel complete.
+							</p>
+						</blockquote>
+					</div>
+
+					<!-- Card footer -->
+					<figcaption class="card__footer">
+						<!-- Avatar -->
+						<img
+							class="card__footer-avatar"
+							src="./assets/images/avatar-michelle.jpg"
+							width="40"
+							height="40"
+							alt="Michelle Appleton"
+						/>
+						<!-- Name -->
+						<cite class="card__footer-name">Michelle Appleton</cite>
+						<!-- Date -->
+						<time class="card__footer-date" datetime="2020-06-28">28 Jun 2020</time>
+						<!-- Share button -->
+						<button class="card__footer-button" type="button" aria-controls="overlay" aria-expanded="false">
+							<!-- Share icon -->
+							<svg
+								class="card__footer-icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="15"
+								height="13"
+								aria-hidden="true"
+							>
+								<path
+									d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+								/>
+							</svg>
+						</button>
+
+						<!-- Footer overlay -->
+						<div class="card__footer-overlay hide" id="overlay" aria-hidden="true">
+							<p class="card__footer-overlay-text">SHARE</p>
+							<a class="card__footer-overlay-link" href="#"
+								><img
+									class="card__footer-overlay-icon"
+									src="./assets/images/icons/icon-facebook.svg"
+									alt=""
+									aria-hidden="true"
+							/></a>
+							<a class="card__footer-overlay-link" href="#"
+								><img
+									class="card__footer-overlay-icon"
+									src="./assets/images/icons/icon-twitter.svg"
+									alt=""
+									aria-hidden="true"
+							/></a>
+							<a class="card__footer-overlay-link" href="#"
+								><img
+									class="card__footer-overlay-icon"
+									src="./assets/images/icons/icon-pinterest.svg"
+									alt=""
+									aria-hidden="true"
+							/></a>
+						</div>
+					</figcaption>
+				</figure>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p class="footer__text">
+				Challenge by
+				<a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+					Frontend Mentor </a
+				>.
+			</p>
+			<p class="footer__text">
+				Coded by
+				<a class="footer__link" href="https://www.frontendmentor.io/profile/Valeri85" target="_blank">
+					Valeri </a
+				>.
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.card {
+	--shadow: hsl(0, 0%, 87.5%);
+
+	width: min(100%, em(400));
+	margin: auto;
+	background-color: var(--white);
+	border-radius: em(12.5);
+	box-shadow: 0 40px 40px 0 var(--shadow);
+	@include desktop {
+		display: grid;
+		grid:
+			'picture body'
+			/ 39.8% 60.2%;
+		width: 50%;
+	}
+	&__image {
+		height: em(247);
+		border-top-left-radius: em(12.5);
+		border-top-right-radius: em(12.5);
+		object-fit: cover;
+		object-position: 100% 100%;
+		@include desktop {
+			height: 100%;
+			border-top-right-radius: 0;
+			border-bottom-left-radius: em(12.5);
+			object-position: left;
+		}
+	}
+	&__body {
+		padding: 2.8em 2.25em 0 2.5em;
+		@include desktop {
+			padding: 2.5em 2.25em 0 3em;
+		}
+	}
+	&__title {
+		font-size: 1.6rem;
+		font-weight: weight(bold);
+		line-height: 1.45;
+		@include desktop {
+			font-size: 2rem;
+		}
+	}
+	&__blockquote {
+		margin: 1em 0.56em 1.125em 0;
+		@include desktop {
+			margin: 0.7em 0.56em 0.1em 0;
+		}
+		&-text {
+			color: var(--desaturated-dark-blue);
+		}
+	}
+	&__footer {
+		display: grid;
+		grid:
+			'avatar name button'
+			'avatar date button'
+			/ 20% 60% 20%;
+		padding: 1.125em 2.4em 1.4em 2.5em;
+		@include desktop {
+			grid:
+				'avatar name button'
+				'avatar date button'
+				/ 15% 75% 10%;
+			padding: 1.25em 2.4em 2.5em 3em;
+		}
+		&-avatar {
+			grid-area: avatar;
+			border-radius: 50%;
+		}
+		&-name {
+			grid-area: name;
+			font-weight: weight(bold);
+			font-style: normal;
+		}
+		&-date {
+			grid-area: date;
+			color: var(--grayish-blue);
+		}
+		&-button {
+			grid-area: button;
+			align-self: center;
+			justify-self: end;
+			display: grid;
+			place-content: center;
+			width: em(40);
+			height: em(40);
+			border-radius: 50%;
+			border: 0;
+			z-index: 1;
+			cursor: pointer;
+			@include desktop {
+				justify-self: center;
+			}
+			&:is(.active) {
+				.card__footer-icon {
+					fill: var(--light-grayish-blue);
+				}
+			}
+		}
+		&-icon {
+			fill: var(--desaturated-dark-blue);
+			transition: fill var(--animation-time) ease-in-out;
+		}
+	}
+}

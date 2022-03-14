@@ -1,0 +1,21 @@
+@use '../helpers/functions' as *;
+
+/* Medium */
+@font-face {
+	font-family: Manrope;
+	font-display: swap;
+	src: local(''), url('../assets/fonts/manrope-v11-latin-500.woff2') format('woff2'),
+		url('../assets/fonts/manrope-v11-latin-500.woff') format('woff');
+	font-weight: weight(medium);
+	font-style: normal;
+}
+
+/* Bold */
+@font-face {
+	font-family: Manrope;
+	font-display: swap;
+	src: local(''), url('../assets/fonts/manrope-v11-latin-700.woff2') format('woff2'),
+		url('../assets/fonts/manrope-v11-latin-700.woff') format('woff');
+	font-weight: weight(bold);
+	font-style: normal;
+}
