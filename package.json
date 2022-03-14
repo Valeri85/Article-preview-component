@@ -14,11 +14,12 @@
 		"watch:assets": "onchange \"./src/assets/**/*\" -- npm run copy:assets",
 		"watch:js": "npx babel ./src/js/script.js --watch --out-file ./public/js/script.js --source-maps",
 		"watch": "npm-run-all --parallel watch:*",
+		"build:js": "npx babel ./src/js/script.js --out-file ./public/js/script.js",
 		"build:sass": "npx sass ./src/sass:./public/css",
 		"build:groupMedia": "npx group-css-media-queries ./public/css/style.css ./public/css/style.css",
 		"build:autoprefixer": "npx postcss ./public/css/style.css -u autoprefixer -r",
 		"build:compressed": "npx sass ./public/css/style.css:./public/css/style.min.css --style compressed",
-		"build:js": "npx minify ./src/js/script.js --out-file ./public/js/script.min.js --mangle.keepClassName",
+		"build:minify": "npx minify ./public/js/script.js --out-file ./public/js/script.min.js --mangle.keepClassName",
 		"start": "npm-run-all copy --parallel watch serve",
 		"build": "npm-run-all copy build:*"
 	},
