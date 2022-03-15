@@ -57,12 +57,12 @@ Users should be able to:
 -   [postcss](https://postcss.org/) - A tool for transforming CSS with JavaScript.
 -   [postcss-cli](https://www.npmjs.com/package/postcss-cli) - Postcss from command line.
 -   [autoprefixer](https://www.npmjs.com/package/autoprefixer) - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use.
--   [group-css-media-queries](https://www.npmjs.com/package/group-css-media-queries) CSS postprocessing: group media queries.
--   [@babel/core](https://www.npmjs.com/package/@babel/core) Babel compiler core. Functionality of babel.
--   [@babel/cli](https://babeljs.io/docs/en/babel-cli) Babel comes with a built-in CLI which can be used to compile files from the command line.
--   [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) Helps configure what browsers we want to support.
--   [babel-minify](https://babeljs.io/docs/en/babel-minify) Minify javascript file.
--   [webp-converter-cli](https://www.npmjs.com/package/webp-converter-cli) The CommandLine tool for converting jpg or png files to webp, recursively.
+-   [group-css-media-queries](https://www.npmjs.com/package/group-css-media-queries) - CSS postprocessing: group media queries.
+-   [@babel/core](https://www.npmjs.com/package/@babel/core) - Babel compiler core. Functionality of babel.
+-   [@babel/cli](https://babeljs.io/docs/en/babel-cli) - Babel comes with a built-in CLI which can be used to compile files from the command line.
+-   [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) - Helps configure what browsers we want to support.
+-   [babel-minify](https://babeljs.io/docs/en/babel-minify) - Minify javascript file.
+-   [webp-converter-cli](https://www.npmjs.com/package/webp-converter-cli) - The CommandLine tool for converting jpg or png files to webp, recursively.
 
 ## Author
 
