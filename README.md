@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Frontend Mentor solution URL](https://www.frontendmentor.io/solutions/article-preview-component-6egDkhuSs)
+-   Live Site URL: [Article preview component live site URL](https://article-preview-component-front-end-mentor.netlify.app/)
 
 ## My process
 
